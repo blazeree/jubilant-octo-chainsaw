@@ -32,7 +32,7 @@
         }
 
         .chat-container {
-            display: flex;
+            display: none;
             flex-direction: column;
             align-items: center;
         }
@@ -86,13 +86,13 @@
         <button id="username-submit">Submit</button>
     </div>
 
-    <div class="chat-container" style="display: none;" id="chat-container">
+    <div class="chat-container" id="chat-container">
         <div class="container">
             <h1>Welcome, <span id="username-display"></span>!</h1>
             <div id="chat-messages"></div>
         </div>
 
-        <div class="sidebar" style="display: none;" id="sidebar">
+        <div class="sidebar" id="sidebar">
             <p>Users in chat:</p>
             <ul id="user-list"></ul>
         </div>
@@ -104,4 +104,5 @@
     </div>
 
     <script src="app.js"></script>
-  
+</body>
+</html>
