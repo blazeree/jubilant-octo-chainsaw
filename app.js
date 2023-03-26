@@ -17,7 +17,7 @@ function setUsername() {
   if (trimmedUsername.length >= 2 && trimmedUsername.length <= 15) {
     username = trimmedUsername;
     chatContainer.style.display = 'flex';
-    usernameContainer.style.display = 'none';
+    document.getElementById('username-container').style.display = 'none';
     socket.emit('username', username);
   } else {
     alert('Username must be between 2 and 15 characters.');
